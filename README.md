@@ -269,24 +269,24 @@ Includes three exclusive exceptions, designed with the Shape Packages in mind:
 class IntInputError(Exception):
     def __init__(self, message):
         super().__init__(message)
-        #This checks if the inicial input, the one of the sides, is exclusively 0, 3 or 4, as strings 
 ```
+This one checks if the inicial input, the `SIDES` one, is exclusively 0, 3 or 4, as `str`.
 
 ### **PointInputError**
 ```python
 class PointInputError(Exception):
     def __init__(self, message):
         super().__init__(message)
-        #This checks if each Vertex is composed by two numbers 
 ```
+This one checks if each Vertex is composed by two numbers.
 
 ### **ShapeConstructionError**
 ```python
 class ShapeConstructionError(Exception):
     def __init__(self, message):
         super().__init__(message)
-        #This checks for repetitions in the vertex given by the user
 ```
+This checks for repetitions in the vertex given by the user.
 
 ## **Presenting: _main.py_**
 Improved with the `try`/`except` block and structure changes, is ready for possible new changes in mind if needed, read below for further details:
@@ -413,7 +413,7 @@ if __name__ == "__main__":
 - Modified certain parts of the code for reading comfort:
 ```python
 SIDES = input("If you wanna know the measurements of a Triangle,""\t""please type 3""\n"
-			  "If you wanna know the measurements of a Quadrilateral,""\t""please type 4""\n"
+              "If you wanna know the measurements of a Quadrilateral,""\t""please type 4""\n"
               "If you wanna exit the program,""\t\t\t\t""please type 0""\n")
         #...
 edge_AB = round(line.Line(point.Point(vertex_A[0], vertex_A[1]), 
