@@ -460,3 +460,6 @@ print(f"The Shape Inner Angles are:    {shape_type.get_inner_angles()}""\n")
 | `PointInputError` | `Please type the x and y values of each vertex...` | `1` | `Error: Invalid Vertex, please type two numbers per vertex.` |
 | `PointInputError` | `Please type the x and y values of each vertex...` | `15 9 23` `19 4 24` `0 0 0` | `Error: Invalid Vertex, please type two numbers per vertex.` |
 | `ShapeConstructionError` | `Please type the x and y values of each vertex...` | `12 1` `20 3` `12 1` | `Error: Each Vertex must be different, please type them again.` |
+
+
+That's all for now, have a nice day!
